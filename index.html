@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/m1.1.png','imagenes/m3.1.png','imagenes/m7.1.png','imagenes/c4.png')">
+<!--INICIO DE LA PAGINA PRINCIPAL POPOCATEPETL-->
+<div data-role="page" id="Principal" data-theme="a">
+  
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>VOLCÁN POPOCATÉPETL </h1>
+   </div>
+   <!--inicio del colapsable galeria popocatepetl-->
+   <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>GALERÍA DEL VOLCÁN</h1>
+         <div>
+         <p><b>Aquí puedes observar las vistas del Volcán Popocatépetl tomadas en diferentes lugares.</b></p>
+         </div>
+    <div>
+   <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:100%;height:22%;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+       </div>
+    </div>
+    </div>
+   <!--final del colapsable galeria popocatepetl-->
+   <!--inicio del menu popocatepetl-->
+<div>
+   <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>DIMENSIONES</h2>
+      <p>Zona geográfica</p>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>DEPENDECIAS QUE LO MONITOREAN</h2>
+      <p>Instituciones que observan el comportamiento del volcán</p>
+      </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>OTROS DATOS INTERESANTES</h2>
+      <p>Mitología y Toponimia</p>
+      </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>VOLCÁN DE COLIMA</h2>
+      <p>Muestra algunos datos reelevantes de este volcán</p>
+      </a>
+    </li>
+  </ul>
+  
+<!--inicio colapsable general-->
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>MEDIDAS PREVENTIVAS</h1>
+<div>
+ <p><b> Cuidar tu Salud y la de tu familia es lo más importante ante cualquier situación. Es por eso que te compartimos algunas recomendaciones que puedes llevar a cabo para protegerte en caso de la caída de ceniza  o de una erupción:</p>
+ </b>
+        <!--inicio 1 colapsable-->
+  <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Caída de ceniza volcánica</h1>
+         <div>
+    <h2></h2>
+    <img src="imagenes/m4.png" width="100%" height="40%">
+   <ul>
+   <li>Mantén la calma.</li>
+   <li>Mantente al pendiente de los medios de comunicación </li>
+   <li>No realices actividades al aire libre, si no tienes a qué salir quédate en tu hogar.</li>
+   <li>Cierra las puertas y ventanas.</li>
+   <li>Si tienes que salir utiliza cubre bocas, ropa de manga larga, y gorra, al llegar a tu destino limpia ojos y garganta con agua pura.</li>
+   <li>Cubre tus ojos con lentes protectores.</li>
+   <li>Ten a la mano una linterna y baterías.</li>
+   <li>Toma precauciones necesarias para evitar accidentes, la ceniza volcánica puede ser resbaladiza en especial si está mojada.</li>
+   <li>Cubre tinacos, cisternas y depósitos de agua.</li>
+   <li>Barre las azoteas, patios y calles y deposita la ceniza en bolsas, no permitas que llegue al drenaje, la ceniza puede ser utilizada en el jardín o en macetas por sus propiedades minerales.</li>
+   <li>Si es posible  no conduzcas, en caso de hacerlo maneja a baja velocidad, siempre con las luces encendidas, recuerda que la ceniza dificulta la visibilidad y hace al pavimento resbaladizo.</li>
+   <li>Ante la caída de ceniza evita consumir alimentos en la vía pública.</li>
+   <li>Si permaneces expuesto por largo tiempo a las cenizas volcánicas, al regresar a tu casa cámbiate de ropa inmediatamente.</li>
+   <li>Durante la caída de ceniza volcánica no dejes salir a los menores a realizar actividades al aire libre.</li>
+   <li>Mantén a tus mascotas en un lugar techado, protege su alimento y agua.</li>
+   <li>No difundas rumores, mantente al pendiente de las recomendaciones de seguridad de las autoridades competentes, si no es necesario no intentes salir de la ciudad.</li>
+   <li>Sal a la calle sólo en caso de ser necesario, como en una evacuación.</li>
+   <li>La ceniza puede causar irritación, no te rasques, en caso de presentar irritación severa u otros síntomas como ardor en los ojos o dificultad para respirar visita inmediatamente a tu médico.</li>
+   </ul>
+    </div>
+    <div> </div>
+    </div>
+    </div>
+    <!--final 1 colapsable-->
+    <!--inicio 2 colapsable-->
+ <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Erupción volcáica</h1>
+         <div>
+     <img src="imagenes/m5.png" width="100%" height="40%">
+  <ul>
+  <li>Con los miembros de la familia preparemos el maletín para emergencias, con alimentos no perecederos, radio, foco, documentos personales, medicinas y protectores para cubrir la nariz.</li>
+  <li>Ubiquemos los albergues temporales, las rutas de evacuación y las zonas seguras en su comunidad.</li>
+  <li>Respetemos los sitios declarados peligrosos.</li>
+  <li>Consultemos a los Comités Municipales y Locales de Emergencias, sobre el sistema de evacuación y los centros de albergues para animales.</li>
+  <li>Establezcamos una ruta de evacuación, lejos de los ríos y quebradas y los posibles albergues.</li>
+  <li>Comuniquemos a las autoridades locales o al 9-1-1 cualquier anomalía u observación sobre el comportamiento del volcán.</li>
+  <li>No nos dejemos llevar por falsos rumores de personas no autorizadas.</li>
+  </ul>
+         </div>
+    <div></div>
+    </div>
+    </div>
+    <!--final 2 colapsable-->
+</div>
+</div>
+</div>
+      <!--final colapsable general-->
+</div>
+<!--final del menu popocatepetl-->
+
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+   </div>
+   <div>
+     <h4>Aplicacion Tres</h4>
+     <h4>"Volcán Popocatépetl"</h4>
+     <h4>RRJ</h4>
+   </div>
+</div>
+</div>
+<!--FINAL DE LA PAGINA PRINCIPAL POPOCATEPETL-->
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="a">
+    <h1>UBICACIÓN</h1>
+    </div>
+   <div data-role="content" align="just">
+    <div>
+ <p> Se localiza en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México.</p>
+ <ul>
+  <li><p>En el Estado de México colinda con los municipios: Tlamanalco, Amecameca, Atlauta y Ecatzingo.</p></li>
+<li><p>Con el estado de Morelos colinda específicamente con el municipio de Tetela del Volcán.</p></li>
+<li><p>Por la parte de Puebla colinda con Huejotzingo, San Salvador el Verde, Domingo Arenas, San Nicolás de los Ranchos y Tochimilco.</p></li>
+</ul>
+<center>
+  <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/m1.1.png',1)"><img src="imagenes/m1.png" width="428" height="180" id="Image6"></a>
+  </p>
+</center>
+<p> Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala.</p>
+<p>Tiene una forma cónica simétrica y está unido por la parte norte con el Iztaccíhuatl mediante un paso montañoso conocido como Paso de Cortés. El volcán tiene glaciares perennes cerca de la boca del cono, en la punta de la montaña. Es el segundo volcán más alto de México, con una altitud máxima de 5500 metros sobre el nivel del mar  y un cráter de 900 m de diámetro y aproximadamente 200 m de profundidad.</p>
+    </div>
+    </div>
+   <div data-role="footer" data-theme="a">
+   <h4><p>Aplicacion Tres, "Volcán Popocatépetl",
+      RRJ</p></h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+    <h1>INSTITUCIONES QUE MONITOREAN AL POPOCATÉPETL</h1>
+    </div>
+   <div data-role="content" align="just">
+    <div>
+     <h2>Descripción del Monitoreo Volcánico</h2>
+     <p>La única manera de percibir y evaluar el estado de actividad y riesgo asociado de un volcán, es a través de la observación y vigilancia sistemática mediante diversos métodos visuales e instrumentales. Si estos se aplican en forma anticipada en las fases previas a un proceso eruptivo, es posible, en la mayoría de los casos, detectar oportunamente un cambio cualitativo y cuantitativo de la actividad que inclusive pudiese conducir a una predicción en el corto plazo de un proceso eruptivo inminente y poner en marcha, de parte de las autoridades de Protección Civil el plan de emergencia previamente establecido. Una muestra de un sistema de vigilancia y monitoreo oportunamente establecido es el del volcán Popocatépetl.</p>
+     <p> En un esfuerzo conjunto:</p> 
+     <ul>
+     <li>Centro Nacional de Prevención de Desastres (CENAPRED)</li>
+     <li>La Secretaría de Gobernación</li>
+     <li>los Institutos de Geofísica y de Ingeniería</li>
+     <li>La UNAM</li>
+     <li>Y con la colaboración del Cascades Volcano Observatory, del U.S. Geological Survey</li>
+   <p><img src="imagenes/m2.png" width="45%" height="45%">
+    <img src="imagenes/m2.1.png" width="45%" height="45%"></p>
+     <p>Se estableció en los últimos años un complejo sistema de observación telemétrico con una central de adquisición y procesamiento de datos.</p>
+    <p> <a href="http://www.cenapred.unam.mx/es/">Da click aquí para ir a la Página de CENAPRED</a></p>
+     </ul>
+     </div>
+    </div>
+   <div data-role="footer" data-theme="a">
+   <h4><p>Aplicacion Tres, "Volcán Popocatépetl",
+      RRJ</p></h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+    <h1>POPOCATÉPETL</h1>
+    </div>
+   <div data-role="content" align="just">
+    <div>
+     <p>Según la leyenda colonial el Popocatépetl fue un guerrero legendario llamado Popoca que al regresar victorioso del campo de batalla se encuentra con la inesperada muerte de su princesa amada, tras lo cual sube al pináculo del templo con ella en sus brazos y se entregan a sí mismos como ofrendas a los dioses. El nombre náhuatl o prehispánico que recibe el popacatepetl es el xalitlehua.</p>
+     <center><p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','imagenes/m3.1.png',1)"><img src="imagenes/m3.png" width="80%" height="40%" id="Image7"></a> </p></center>
+ <h2>Toponimia</h2>
+Su nombre, proveniente de la lengua náhuatl, compuesto por Popōca «que humea» y tepētl «montaña», en conjunto significa «montaña que humea», debido a su ya constante actividad desde la época prehispánica.
+     </div>
+    </div>
+   <div data-role="footer" data-theme="a">
+    <h4><p>Aplicacion Tres, "Volcán Popocatépetl",
+      RRJ</p></h4>
+   </div>
+</div>
+</div>
+
+ <!--INICIO DE LA PAGINA 4 DE COLIMA-->
+<div data-role="page" id="Pagina4" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>VOLCÁN DE COLIMA</h1>
+   </div>
+      <!--inicio colapsable galeria  colima-->
+ <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>IMÁGEN  DEL VOLCÁN</h1>
+         <div>
+         <p><b>Aquí puedes observar el Volcán de Colima.</b></p>
+         </div>
+         
+         <div> 
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/c4.png',1)"><img src="imagenes/c5.png" width="100%" height="45%" id="Image9"></a>
+         </p>
+         </div>
+    </div>
+    </div>
+    
+       <!--final colapsable galeria colima-->
+     <!--inicio de menu colima-->
+   <div>
+   <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>DIMENSIONES</h2>
+      <p>Zona geográfica</p>
+     </a>
+    </li>
+    
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>DEPENDECIAS QUE LO MONITOREAN</h2>
+      <p>Instituciones que observan el comportamiento del volcán</p>
+      </a>
+    </li>
+  </ul>
+ </div>
+ <!--final de menu colima-->
+ 
+       <div data-role="footer" align="center" data-theme="a">
+   <div> </div>
+   <div>
+     <h4>Aplicacion Tres</h4>
+     <h4>"Volcán Popocatépetl"</h4>
+     <h4>RRJ</h4>
+   </div>
+</div>
+</div>
+<!--FINAL DE LA PAGINA 4 DE COLIMA-->
+ 
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="a">
+    <h1>UBICACIÓN</h1>
+    </div>
+   <div data-role="content" align="just">
+    <div>
+ <p>El volcán de Fuego se eleva entre 3870 y 3940 msnm, y su altura se encuentra en un constante cambio gracias a la constante actividad que ha presentado durante los últimos años; por eso resulta difícil decir con exactitud cuál es en estos momentos</p>
+  <p><img src="imagenes/m6.png" width="100%" height="45%"></p>
+<p> Es un estratovolcán andesítico que forma parte, junto con el Nevado de Colima (4330 msnm.), de un complejo volcánico situado en el Cinturón Neovolcánico Mexicano y cuyas coordenadas geográficas (19º30'44''N y 103º37'02''W) lo sitúan entre los Estados de Colima (municipios de Comala y Cuauhtémoc) y Jalisco (municipios de Tuxpan, Zapotitlán y Tonila.</p>
+    </div>
+    </div>
+    <div data-role="footer" data-theme="a">
+     <h4><p>Aplicacion Tres, "Volcán Popocatépetl",
+      RRJ</p></h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+    <h1>INSTITUCIONES QUE MONITOREAN AL VOLCÁN DE COLIMA</h1>
+    </div>
+   <div data-role="content" align="just">
+    <div>
+ 
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','imagenes/m7.1.png',1)"><img src="imagenes/m7.png" width="100%" height="45%" id="Image8"></a>
+     
+      </p>
+     El sistema de vigilancia y monitoreo establecido en el volcán de Colima son:</p> 
+     <ul>
+      <li>Centro Nacional de Prevención de Desastres (CENAPRED)</li>
+      <li>La Secretaría de Gobernación (Segob)
+     <li>El Fondo de Desastres Naturales (Fonden)
+     <li>Centro Nacional de Prevención de Desastres
+     </ul>
+      <p> <a href="http://www.cenapred.unam.mx/es/">Da click aquí para ir a la Página de CENAPRED</a></p>
+     
+    </div>
+    </div>
+    <div data-role="footer" data-theme="a">
+   <h4><p>Aplicacion Tres, "Volcán Popocatépetl",
+      RRJ</p></h4>
+   </div>
+</div>
+</div>
+
+
+                            
+</body>
+</html>
